@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="submission-container">
+    <h2>Submit Assignment: {{ assignment.title }}</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if submission.submitted_at %}
+    <p>Submitted at: {{ submission.submitted_at }}</p>
+    {% endif %}
+</div>
+{% endblock %}

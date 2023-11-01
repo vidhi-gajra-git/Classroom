@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="submission-container">
+    <h2>Update Submission</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file" required>
+        <button type="submit">Update</button>
+    </form>
+    <p>Updated at: {{ user_submission.updated_at }}</p>
+</div>
+{% endblock %}

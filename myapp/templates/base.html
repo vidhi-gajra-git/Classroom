@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Classroom App{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css'%}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <h1 class="navbar-heading">Classroom</h1>
+            <ul class="navbar-links">
+                <li><a href="{% url 'assignments' %}">Assignments</a></li>
+                <li><a href="{% url 'courses' %}">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="content-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
+1

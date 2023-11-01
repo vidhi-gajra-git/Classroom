@@ -1,0 +1,183 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+.login-container {
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #555; /* Gray text color */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f8f8; /* Light gray background */
+    border: none;
+    border-radius: 5px;
+    color: green; /* Orange text color */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #fff; /* White background on hover */
+}
+.navbar {
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text color */
+    padding: 10px 0; /* Add some spacing */
+}
+
+.navbar-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-heading {
+    margin: 0;
+    font-size: 24px;
+}
+
+.assignments-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.page-title {
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px;
+}
+
+.assignment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.assignment-item {
+    background-color: #f8f8f8; /* Light gray background */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-item h3 {
+    color:green; /* Orange text color */
+    margin: 0;
+}
+
+.due-date {
+    color: #555; /* Gray text color */
+    font-style: italic;
+}
+.navbar {
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text color */
+    padding: 10px 0; /* Add some spacing */
+}
+
+.navbar-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-heading {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.content-container {
+    margin: 20px;
+}
+.assignments-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.page-title {
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px;
+}
+
+.assignment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.assignment-item {
+  
+    border:solid 1px green;
+    color: black; /* White text color */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-item h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.due-date {
+    color: #000000; /* Light gray text color */
+    font-style: italic;
+}

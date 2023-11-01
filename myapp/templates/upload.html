@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Status</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css'%}">
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            // Get the URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // Get the value of the 'param' parameter
+            const assignmenttitle = urlParams.get('title');
+            
+            // Display the value on the page
+          
+        };
+    </script>
+    <div class="assignment-status-container">
+        <h2 class="page-title">Assignment Status</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="assignment-status">
+                <p><span class="status-label">Due Date:</span> August 31, 2023</p>
+                {% if submitted %}
+                <p><span class="status-label">Submission Status:</span> Submitted</p>
+                
+               
+                    <p><span class="status-label">Submitted Time:</span> August 28, 2023, 15:30</p>
+                {% else %}
+                    <input type="file" name="submission_file" class="file-input">
+                    <button type="submit" class="submit-button">Submit</button>
+                {% endif %}
+                
+                <button class="update-button">Update</button>
+                <button class="delete-button">Delete</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% comment %} {% extends 'base.html' 
+ %}  {% endcomment %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css'%}">
+
+{% block content %}
+<div class="assignments-container">
+    <h2 class="page-title">Assignments for {{ course.course_name }}</h2>
+    <ul class="assignment-list">
+        {% for assignment in assignments %}
+        <li class="assignment-item">
+            <h3><a href="#">{{ assignment.title }}</a></h3>
+            <p>{{ assignment.description }}</p>
+            <p class="due-date">Due: {{ assignment.due_date }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
